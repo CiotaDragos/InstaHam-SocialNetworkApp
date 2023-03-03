@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.social_network_gradle.HelloRegister">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="imageViewLeft" fitHeight="400.0" fitWidth="324.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../images/2641099.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="337.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="signInButton" layoutX="48.0" layoutY="326.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="213.0" style="-fx-background-color: #24AFDF;" text="Register" textFill="WHITE">
+                    <font>
+                        <Font name="SansSerif Bold" size="13.0" />
+                    </font></Button>
+
+                <ImageView fx:id="imageViewRight" fitHeight="117.0" fitWidth="200.0" layoutX="96.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../images/cane).gif" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="102.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instaham" textAlignment="CENTER" wrappingWidth="105.4700927734375">
+                    <font>
+                        <Font name="Arial Black" size="20.0" />
+                    </font>
+                </Text>
+            <TextField fx:id="firstName" layoutX="47.0" layoutY="142.0" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #565858; -fx-text-fill: white;">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastName" layoutX="158.0" layoutY="142.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #565858; -fx-text-fill: white;" />
+            <TextField fx:id="email" layoutX="47.0" layoutY="188.0" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #565858; -fx-text-fill: white;" />
+            <TextField fx:id="yearOfBirth" layoutX="46.0" layoutY="237.0" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #565858; -fx-text-fill: white;">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="username" layoutX="47.0" layoutY="286.0" style="-fx-background-color: #565858; -fx-text-fill: white;" />
+            <Text fill="#d2d2d2" layoutX="47.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+            <Text fill="#d2d2d2" layoutX="158.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+            <Text fill="#d2d2d2" layoutX="47.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text fill="#d2d2d2" layoutX="48.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year of birth" />
+            <Text fill="#d2d2d2" layoutX="46.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Username">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Text>
+            <Button fx:id="goBackButton" layoutX="45.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #202020;" text="Go back" textFill="#24afdf" />
+            <Text fx:id="errorMessage" fill="#d22626" layoutX="156.0" layoutY="377.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User already exists!" />
+            <Text fx:id="successMessage" fill="#35e650" layoutX="214.0" layoutY="377.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success!" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

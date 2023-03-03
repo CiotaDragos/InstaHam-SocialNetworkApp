@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.social_network_gradle.HelloLogin">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="231.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageViewLeft" fitHeight="400.0" fitWidth="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/2641099.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="337.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginButton" layoutX="49.0" layoutY="287.0" mnemonicParsing="false" onAction="#logIn" prefHeight="25.0" prefWidth="213.0" style="-fx-background-color: #24AFDF;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font></Button>
+            <Text fill="WHITE" layoutX="73.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need an account?">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="username" layoutX="47.0" layoutY="227.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: #565858; -fx-text-fill: white;">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </TextField>
+            <Text fill="#d2d2d2" layoutX="48.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <TextField fx:id="email" layoutX="47.0" layoutY="166.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: #565858; -fx-text-fill: white;" />
+            <Text fill="#d2d2d2" layoutX="47.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <ImageView fx:id="imageViewRight" fitHeight="117.0" fitWidth="200.0" layoutX="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/cane).gif" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instaham" textAlignment="CENTER" wrappingWidth="105.4700927734375">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="signUpButton" layoutX="182.0" layoutY="316.0" mnemonicParsing="false" onAction="#goToRegister" style="-fx-background-color: #202020;" text="Sign Up" textAlignment="CENTER" textFill="#24afdf">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="errorMessage" fill="#d22626" layoutX="83.0" layoutY="362.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This account does not exist!">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

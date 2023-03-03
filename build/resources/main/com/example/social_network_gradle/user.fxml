@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.social_network_gradle.HelloUser">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="617.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listOfFriendships" layoutX="28.0" layoutY="81.0" prefHeight="201.0" prefWidth="258.0" style="-fx-background-color: #565858;" />
+            <Text fill="WHITE" layoutX="223.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instaham">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="addFriendButton" layoutX="367.0" layoutY="342.0" mnemonicParsing="false" onAction="#addFriend" prefHeight="20.0" prefWidth="96.0" style="-fx-background-color: #24afdf;" text="Add friend" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="11.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="367.0" layoutY="303.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #565858;" />
+            <Text fx:id="successMessage" layoutX="502.0" layoutY="351.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #35e650;" text="Request sent!" textAlignment="CENTER" wrappingWidth="50.80340576171875" />
+            <Text fx:id="errorMessage" layoutX="487.0" layoutY="350.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #d22626;" text="The user does not exist!" textAlignment="CENTER" wrappingWidth="80.77667236328125" />
+            <Button fx:id="logOutButton" layoutX="479.0" layoutY="43.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="21.0" prefWidth="61.0" style="-fx-background-color: #202020; -fx-text-fill: #24afdf;" text="LogOut" />
+            <Text fx:id="userUsername" fill="WHITE" layoutX="435.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="150.6666259765625">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="errorMessageFriendship" layoutX="487.0" layoutY="342.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #d22626;" text="Already friends or request already sent" textAlignment="CENTER" wrappingWidth="82.46417236328125" />
+            <ListView fx:id="listOfFriendRequests" layoutX="323.0" layoutY="145.0" prefHeight="136.0" prefWidth="249.0" style="-fx-background-color: #565858;" />
+            <TextField fx:id="friendRequestField" layoutX="323.0" layoutY="81.0" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #565858;" />
+            <Button fx:id="add" layoutX="476.0" layoutY="82.0" mnemonicParsing="false" onAction="#acceptFriendRequest" prefHeight="33.0" prefWidth="44.0" style="-fx-background-color: #24afdf;" text="Add" textFill="WHITE" />
+            <Button fx:id="deny" layoutX="531.0" layoutY="82.0" mnemonicParsing="false" onAction="#denyFriendRequest" prefHeight="33.0" prefWidth="43.0" style="-fx-background-color: #24afdf;" text="Deny" textFill="WHITE" />
+            <Text fx:id="errorMessageAdd" layoutX="323.0" layoutY="135.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #d22626;" text="No friend request with this name" />
+            <Text fx:id="successMessageAdd" layoutX="323.0" layoutY="135.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #35e650;" text="Done!" />
+            <TextField fx:id="removeTextField" layoutX="69.0" layoutY="303.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #565858;" />
+            <Button fx:id="removeFriend" layoutX="69.0" layoutY="342.0" mnemonicParsing="false" onAction="#deleteFriend" prefHeight="20.0" prefWidth="96.0" style="-fx-background-color: #24afdf;" text="Remove friend" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Regular" size="11.0" />
+               </font>
+            </Button>
+            <Text fx:id="succesRemoveFriend" fill="#35e650" layoutX="187.0" layoutY="358.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success!" />
+            <Text fx:id="errorRemoveFriend" fill="#d22626" layoutX="177.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This friend does not exist!" textAlignment="CENTER" wrappingWidth="63.13604736328125" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
